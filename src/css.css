@@ -1,0 +1,274 @@
+/* 
+Guillaume Comfort, IT202A
+CSS file for a Shark Fin financial group
+/*
+
+/* UNIV SELECTOR */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color:hsl(175, 100%, 82%);
+    color:#0047a3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(images/waves.png);
+    background-repeat: repeat-x, repeat-y;
+}
+#wrapper {
+    background-color:#ffffff;
+    min-width: 1200px;
+    max-width: 1480px;
+    margin: auto;
+}
+
+header {
+    background-color: #42ffef;
+    height: 150px;
+    text-align: center;
+    background-image: url(images/stocksharkfin.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 150px;
+}
+h1 {
+    line-height: 200%;
+    padding-top: 50px;
+    padding-left: 2em;
+}
+/* NAV SECTION */
+nav {
+    font-weight: bold;
+    padding: 1em;
+    float: left;
+    width: 160px;
+    background-color: inherit; 
+}
+nav a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border-style: outset;
+    border-color: #808080;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#inflationbutton {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border-style: outset;
+    border-color: #25ffff;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+#inflationbutton:hover {
+    color:#098797;
+    border-color: #23ddeb;
+    border-width: 3px; 
+}
+nav a:link {
+    color:#386188
+}
+nav a:visited {
+    color:#110158;
+}
+nav a:hover {
+    color:#0099ad;
+    border-style: inset;
+    border-color: #213261;
+    border-width: 3px; 
+}
+nav ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+/**/ 
+footer {
+    background-color:hsl(175, 100%, 82%);
+    font-size: .60em; 
+    text-align: center;
+    font-style: italic;
+    padding: 1em;
+}
+main {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    margin-left: 170px;
+}
+#small {
+    max-height: 700px;
+    max-width: 450px;
+}
+#floatleft {
+    float: left;
+    margin-right: 4em;
+    max-height: 400px;
+    max-width: 200px;
+}
+#clear {
+    clear: both;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #960ce6;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+th {
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #960ce6;
+}
+td {
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#960ce6;
+}
+tr:nth-of-type(even) {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #960ce6;
+    background-color: #ffbe93
+}
+caption {
+    margin: 1em;
+    font-weight: bold;
+    font-size: 120%;
+}
+label {
+    float: left;
+    display: block;
+    font-weight: bold;
+    width: 10em;
+    padding-right: 1em;
+    text-align: right;
+}
+input {
+    margin-bottom: 1em;
+}
+textarea {
+    margin-bottom: 1em;
+}
+#mySubmit {
+    margin-left: 13em;
+}
+#reset {
+    margin-left: 2em;
+}
+#Mobile {
+    display: none;
+}
+#Desktop {
+    display: inline;
+}
+
+/* TABLET CSS */
+
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    #wrapper {
+        width: 100%;
+        min-width: 100px;
+        margin: 0px;
+        padding: 0px;
+    }
+    header {
+        padding-top: 1px;
+    }
+    h1 {
+        padding-top: 1em;
+    }
+    nav {
+        float: none;
+        width: auto;
+        padding-left: 2em;
+    }
+    nav a {
+        padding: 0.2em;
+        margin-left: 0.3em;
+        float: left;
+        width: 23%;
+    }
+    main {
+        padding: 2.5em 1em;
+        margin: 0px;
+        font-size: 90%;
+        float: clear;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    h2, h3, p, dl, main ul {
+        padding-left: 2em;
+    }
+    .floatleft {
+        margin-left: 2em;
+        margin-bottom: 1em;
+        float: left;
+        width: 200px;
+    }
+    .clear {
+        padding-left: 2em;
+    }
+    #contact {
+        padding-top: 25px;
+    }
+}
+
+/* PHONE CSS */ 
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+        padding-top: 0.25em;
+        padding-left: 1.5em;
+        width: 85%;
+        text-align: center; 
+    }
+    h2 {
+        padding-top: 70px;
+    }
+    p {
+        text-align: left;
+    }
+    nav a {
+        padding-left: 0.5em;
+        margin-left: 0.5em;
+        float: left;
+        width: 35%;
+        min-width: 6em;
+    }
+    main {
+        padding-top: 0px;
+    }
+    .floatleft {
+        float: none;
+        display: none;
+    }
+    footer {
+        padding: 0.5em;
+        display: none;
+    }
+    #Mobile {
+        display: inline;
+    }
+    #Desktop {
+        display: none;
+    }
+    #contact {
+        padding-top: 125px;
+    }
+}
